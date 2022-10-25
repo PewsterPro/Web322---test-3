@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add student</title>
+    <style>
+        h {
+            display: flex; 
+            font-size: 30px;
+             justify-content:center;
+         }
+         div.relative {
+            position: center;
+            border: 1px solid black;
+            
+            width: 300px;
+         }
+     </style>
+</head>
+<body>
+    <h><b>Add Student</b></h>
+    <form method="post" action="/addStudent">
+    <div class= "relative">
+        <p class="ID">
+                <label for="firstName">Student Id:</label>
+                <input class="form-control" id="Id" name="Id" type="number"/>
+        </p>
+        <p class="Name">
+            
+                <label for="last_name">Student Name:</label>
+                <input class="form-control" id="Name" name="Name" type="text"/>
+           
+        </p>
+        <p class="Option">
+                Program: 
+                <select>
+                    <option id="BSD">BSD</option>
+                    <option id="CPA">CPA</option>
+                    <option id="DSA">DSA</option>
+                </select>
+           
+        </p>
+        <p class="GPA">
+                <label for="firstName">GPA:</label>
+                <input class="form-control" id="GPA" name="GPA" type="number" />
+        </p>
+        <input type="submit" class="btn btn-primary pull-right" value="Add Studnet"/>
+        <input type="submit" class="btn btn-primary pull-right" value="Reset"/>
+    </div>
+
+</form>
+</body>
+</html>
