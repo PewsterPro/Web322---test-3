@@ -52,6 +52,10 @@ app.get("/student/:studId", function (req, res) {
     })
 });
 
+app.use(function (req, res) {
+    res.status(404).sendFile(path.join(__dirname,"/views/error404.html"));
+})
+
 dataPrep.prep()
     .then(() => {
         app.listen(8080, onHttpStart);
